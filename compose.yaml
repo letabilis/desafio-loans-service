@@ -1,0 +1,10 @@
+services:
+  server:
+    container_name: loans-service-server
+    build:
+      context: .
+    environment:
+      EXPRESS_PORT: ${EXPRESS_PORT}
+    ports:
+      - ${EXPRESS_PORT}:${EXPRESS_PORT}
+
